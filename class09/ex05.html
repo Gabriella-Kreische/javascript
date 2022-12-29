@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First steps with DOM(Document Object Model)</title>
+    <style>
+        body {
+            background: rgb(68, 53, 136);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting studies with DOM</h1>
+    <p>Here goes the result</p>
+    <p>Learning how to use <strong>DOM</strong> in JavaScript.</p>
+    <div id="msg">Click me</div>
+    <div name="msg2">Test</div>
+    <script>
+       /* window.document.write(window.document.URL)
+        window.document.write('Hello, world!')
+        window.document.write(window.navigator.appName)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('<hr>It is written: ' + p1.innerText)
+        
+        
+        p1.style.color = 'black'
+        window.document.write(p1.innerHTML)
+        window.alert(p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'I am waiting...'
+        
+        var d = window.document.getElementsByName('msg2')
+        d.innerText = 'Hello' //It didnt work
+        var e = window.document.querySelector('div#msg')
+        d.style.color = 'green'
+        window.document.getElementById('msg').innerText = 'HelloHelloHello'
+        var d = window.document.getElementsByName('msg2')[0]
+        d.innerText = 'Hello!!!!'*/
+        //RECOMMENDED QUERY SELECTOR
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+
+    </script>
+</body>
+</html>
