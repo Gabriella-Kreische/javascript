@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Country Checker</h1>
+    <p>Type where are you from: <input type="text" name="origin" id="origin"/></p>
+    <p>Type where do you live: <input type="text" name="residency" id="residency"/></p>
+    <input type="button" value="Check" onclick="calculate()">
+    <div id="res">
+    </div>
+    <script>
+        function calculate(){
+            var country = window.document.querySelector('input#residency')
+            var origin = window.document.getElementById('origin')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>You are living in ${country.value}</p>`
+            res.innerHTML += `<p>Your are from ${origin.value}</p>`
+
+            if (country.value != origin.value) {
+                res.innerHTML += `<p>You are foreign</p>`
+            } else {
+                res.innerHTML += 'You live in the country where you were born!'
+            }
+        }
+    </script>
+    
+</body>
+</html>
